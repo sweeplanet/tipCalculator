@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+
+
+    <h1>SPLI<br>TTER</h1>
+
+    <div class="container cajaprincipal">
+      <div class="row">
+        <div class="col-lg-6 columna1">
+          <h3 class="pequeños_titulos">Bill</h3>
+          <div class="input-group mb-2 first-input">
+            <span class="input-group-text">$</span>
+            <input type="text" id="billinput" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="0">
+          </div>
+
+          <h3 class="pequeños_titulos">Select Tip %</h3>
+          <!-- <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-primary">5%</button>
+            <button type="button" class="btn btn-outline-primary">10%</button>
+            <button type="button" class="btn btn-outline-primary">15%</button>
+          </div> -->
+          <button type="button" class="btn btn-primary btn-primera_columna">5%</button>
+          <button type="button" class="btn btn-primary btn-primera_columna">10%</button>
+          <button type="button" class="btn btn-primary btn-primera_columna">15%</button>
+          <div class="sgdbloque">
+            <button type="button" class="btn btn-primary btn-primera_columna">25%</button>
+            <button type="button" class="btn btn-primary btn-primera_columna">50%</button>
+            <!-- <button type="button" class="btn btn-primary sgdbloque custom">Custom</button> -->
+            <input type="text" class="custom" placeholder="Custom">
+          </div>
+          <h3 class="pequeños_titulos">Number of People<span class="cant_be_zero">Can't be zero</span></h3>
+          <div class="input-group mb-2 second-input">
+            <span class="input-group-text">👤</span>
+            <input type="text" id="numberpersoninput" class="form-control" placeholder="0">
+          </div>
+
+        </div>
+        <div class="col-lg-6 columna2">
+          <div class="container">
+            <div class="row fila_segunda_columna">
+              <div class="col">
+                <h3 class="titulos_columna_2">Tip Amount</h3>
+                <p>/ person</p>
+              </div>
+              <div class="col">
+                <label for="titulos_columna_2" class="tip_final">$0.00</label>
+              </div>
+            </div>
+            <div class="row fila_segunda_columna">
+              <div class="col">
+                <h3 class="titulos_columna_2">Total</h3>
+                <p>/ person</p>
+              </div>
+              <div class="col">
+                <label for="titulos_columna_2" class="tip_final_person">$0.00</label>
+              </div>
+            </div>
+          </div>
+          <!-- <h3 class="titulos_columna_2">Tip Amount<span class="tip_final"></span>
+          <p>/ person</p>
+
+          <h3 class="titulos_columna_2">Total<span class="tip_final_person">$0.00</span></h3>
+          <p>/ person</p> -->
+          <div class="d-grid">
+            <button class="btn btn-primary btn-segunda_columna" type="button">RESET</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Daniel Moreno</a>.
+    </div>
+  </footer>
+  <!--Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <!--JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!--Own javascript -->
+  <script type="text/javascript" src="calc.js"></script>
+</body>
+
+</html>
